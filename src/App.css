@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.App{
+    display: flex;
+    justify-content: center;
+    background-color: #dfdfdf;
+}
+
+.content {
+    max-width: 1120px;
+}
+
+.item {
+    width: 500px;
+    padding: 1em;
+    margin: 1em;
+    border: 1px solid #000000;
+    display: flex;
+    justify-content: space-around;
+}

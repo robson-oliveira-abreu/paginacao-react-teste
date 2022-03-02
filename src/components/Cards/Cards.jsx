@@ -1,14 +1,22 @@
 import React from "react";
 
-import reactImage from '../../assets/react.png'
-import './styles.css'
+const Cards = ({ currentItens }) => {
+    return (
+        <div>
+            {
+                currentItens.map(item => {
+                    return (
+                        <div className='item'>
+                            <span>{item.id} </span>
+                            <span>{item.title} </span>
+                            <span>{item.completed}</span>
+                        </div>
+                    )
+                })
+            }
+        </div>
 
-function Cards(){
-return (
-    <div className="card">
-        <img src={reactImage} alt="" />
-    </div>
-)
+    )
 }
 
 export default Cards;
